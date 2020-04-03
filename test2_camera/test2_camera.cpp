@@ -30,7 +30,7 @@ int main(int argc, char** argv)
 	//--------------------------------------------------------------------------------------
 	// open the default camera
 	//--------------------------------------------------------------------------------------
-	cv::VideoCapture cap("C:/GitHub/opencv_raylib/test2_camera/video1.avi");
+	cv::VideoCapture cap("video1.avi");
 	if (!cap.isOpened())
 	{
 		printf("ERROR Cannot open video\n");
@@ -106,7 +106,7 @@ int main(int argc, char** argv)
 
 		for (int i = 0; i < vector_of_rectangles.size(); i++)
 		{
-			DrawRectangleLines(vector_of_rectangles[i].x, vector_of_rectangles[i].y, vector_of_rectangles[i].width, vector_of_rectangles[i].height, VIOLET);
+			DrawRectangleLines(vector_of_rectangles[i].x, vector_of_rectangles[i].y, vector_of_rectangles[i].width, vector_of_rectangles[i].height, GREEN);
 		}
 		EndDrawing();
 		//----------------------------------------------------------------------------------
