@@ -110,7 +110,8 @@ int main(int argc, char** argv)
 		}
 		EndDrawing();
 		//----------------------------------------------------------------------------------
-
+		UnloadTexture(texture);
+		
 		// Caputre new frame
 		frame1.release();
 		frame1 = frame2;
